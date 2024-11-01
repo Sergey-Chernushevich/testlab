@@ -1,0 +1,119 @@
+@import "./variables.scss";
+
+.burgerButton {
+  position: absolute;
+  right: 0;
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+  position: relative;
+  display: none;
+  z-index: 100;
+
+  @media (max-width: 768px) {
+    display: block;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: var(--white);
+    transform: translate(-50%, -50%) rotate(0);
+    left: 50%;
+    top: 6px;
+    transition: var(--transition-time);
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: var(--white);
+    transform: translate(-50%, -50%);
+    left: 50%;
+    bottom: 4px;
+    transition: var(--transition-time);
+  }
+  &_active {
+    border-color: red;
+
+    &::before {
+      background: var(--black);
+      transform: translate(-50%, -50%) rotate(45deg);
+      left: 50%;
+      top: 50%;
+      transition: var(--transition-time);
+    }
+    &::after {
+      background: var(--black);
+      transform: translate(-50%, -50%) rotate(-45deg);
+      left: 50%;
+      top: 50%;
+      transition: var(--transition-time);
+    }
+  }
+}
+
+.burgerMenuWrapper {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100dvh;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: var(--transition-time);
+  z-index: 50;
+
+  &.burgerMenuWrapper_active {
+    opacity: 1;
+    visibility: visible;
+    transition: var(--transition-time);
+  }
+
+  .burgerMenu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100dvh;
+    background: var(--white);
+    padding: 97px 16px 28px 16px;
+    transform: translateX(-100%);
+    transition: var(--transition-time);
+
+    &.burgerMenu_active {
+      transform: translateX(0);
+      transition: var(--transition-time);
+    }
+  }
+
+  .navigationList {
+    flex-direction: column;
+
+    .navigationList__item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      @include body-18;
+      padding-top: 16px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--light-gray);
+
+      &:first-child {
+        border-top: 1px solid var(--light-gray);
+      }
+      a {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+  }
+}

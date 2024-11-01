@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>TestLab</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="burgerMenuWrapper">
+        <div class="burgerMenu">
+          <nav class="navigation">
+            <ul class="navigationList">
+              <li class="navigationList__item">
+                <a class="navigationList__link" href="#howItWorks">
+                  <span>Как это работает</span>
+                  <img
+                    src="./assets/arrowRightSmall.png"
+                    alt="arrowRightSmall"
+                  />
+                </a>
+              </li>
+              <li class="navigationList__item">
+                <a class="navigationList__link" href="#thirdBlock">
+                  <span> 3-й блок </span>
+                  <img
+                    src="./assets/arrowRightSmall.png"
+                    alt="arrowRightSmall"
+                  />
+                </a>
+              </li>
+              <li class="navigationList__item">
+                <a class="navigationList__link" href="#questions">
+                  <span>Вопросы и ответы</span>
+                  <img
+                    src="./assets/arrowRightSmall.png"
+                    alt="arrowRightSmall"
+                  />
+                </a>
+              </li>
+              <li class="navigationList__item">
+                <a class="navigationList__link" href="#form">
+                  <span>Форма</span>
+                  <img
+                    src="./assets/arrowRightSmall.png"
+                    alt="arrowRightSmall"
+                  />
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <section class="section heroSection">
+        <header class="header">
+          <div class="header__logo">
+            <img src="./assets/mainLogo.png" alt="TestLab" />
+            <span class="header__logoTitle">testLab</span>
+          </div>
+          <nav class="header__navigation">
+            <ul class="header__navigationList">
+              <li class="header__navigationItem">
+                <a href="#howItWorks" class="header__navigationLink"
+                  >Как это работает</a
+                >
+              </li>
+              <li class="header__navigationItem">
+                <a href="#thirdBlock" class="header__navigationLink"
+                  >3-й блок</a
+                >
+              </li>
+              <li class="header__navigationItem">
+                <a href="#questions" class="header__navigationLink"
+                  >Вопросы и ответы</a
+                >
+              </li>
+              <li class="header__navigationItem">
+                <a href="#form" class="header__navigationLink">Форма</a>
+              </li>
+            </ul>
+          </nav>
+          <button id="burgerButton" class="burgerButton"></button>
+        </header>
+        <div class="heroSection__content">
+          <div class="heroSection__contentWrapper">
+            <h1 class="heroSection__mainTitle">
+              Говорят, никогда не поздно сменить профессию
+            </h1>
+            <p class="heroSection__subTitle">
+              Сделай круто тестовое задание и у тебя получится
+            </p>
+            <a href="#howItWorks">
+              <button class="button grey">Проще простого</button>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="section hIWSection" id="howItWorks">
+        <h2 class="section__title">Как это работает</h2>
+        <div class="hIWSection__steps">
+          <ul class="hIWsection__stepList">
+            <li class="stepItem">
+              <div class="stepItem__img">
+                <img src="./assets/stepsImg/waiting.png" alt="waiting" />
+              </div>
+              <div>
+                <h6 class="stepItem__title">Прочитай задание внимательно</h6>
+                <p class="stepItem__paragraph">
+                  Думаю у тебя не займет это больше двух-трех минут
+                </p>
+              </div>
+            </li>
+            <li class="stepItem">
+              <div class="stepItem__img">
+                <img
+                  class="stepItem__img"
+                  src="./assets/stepsImg/delivery-truck.png"
+                  alt="delivery-truck"
+                />
+              </div>
+              <div>
+                <h6 class="stepItem__title">Изучи весь макет заранее</h6>
+                <p class="stepItem__paragraph">
+                  Подумай как это будет работать на разных разрешениях и при
+                  скролле
+                </p>
+              </div>
+            </li>
+            <li class="stepItem">
+              <div class="stepItem__img">
+                <img src="./assets/stepsImg/secure.png" alt="secure" />
+              </div>
+              <div>
+                <h6 class="stepItem__title">Сделай хорошо</h6>
+                <p class="stepItem__paragraph">
+                  Чтобы мы могли тебе доверить подобные задачи в будущем
+                </p>
+              </div>
+            </li>
+            <li class="stepItem">
+              <div class="stepItem__img">
+                <img
+                  class="stepItem__img"
+                  src="./assets/stepsImg/money-bags.png"
+                  alt="money-bags"
+                />
+              </div>
+              <div>
+                <h6 class="stepItem__title">Получи предложение</h6>
+                <p class="stepItem__paragraph">
+                  Ну тут все просто, не я придумал правила, но думаю так и
+                  будет)))
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="hIWSection__thirdBlock thirdBlock" id="thirdBlock">
+          <div class="thirdBlock__content">
+            <h5 class="thirdBlock__title">Круто, ты дошел до третьего блока</h5>
+            <p class="thirdBlock__paragraph first">
+              63% опрошенных пользовались кредитами из-за того, что не могли
+              покрыть непредвиденные расходы свыше 15 000 ₽.
+            </p>
+            <p class="thirdBlock__paragraph">
+              Доступ к заработанным деньгам помогает отказаться от кредитов и
+              экономить деньги на процентах и штрафах.
+            </p>
+          </div>
+          <div class="thirdBlock__img">
+            <img src="./assets/phone.webp" alt="phone" />
+          </div>
+        </div>
+      </section>
+      <section class="section reviews">
+        <h2 class="section__title reviews__title">Отзывы</h2>
+        <div class="review__wrapper">
+          <div class="handler-prev handler">
+            <svg
+              width="16"
+              height="32"
+              viewBox="0 0 16 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M14.8387 2.27597C15.0816 2.0245 15.216 1.6877 15.2129 1.33811C15.2099 0.988509 15.0697 0.654093 14.8225 0.406882C14.5753 0.159671 14.2408 0.0194457 13.8912 0.0164078C13.5417 0.0133699 13.2048 0.147762 12.9534 0.39064L2.05738 11.2866C0.807572 12.5368 0.105469 14.2322 0.105469 16C0.105469 17.7677 0.807572 19.4631 2.05738 20.7133L12.9534 31.6093C13.2048 31.8522 13.5417 31.9866 13.8912 31.9835C14.2408 31.9805 14.5753 31.8403 14.8225 31.5931C15.0697 31.3459 15.2099 31.0114 15.2129 30.6618C15.216 30.3122 15.0816 29.9754 14.8387 29.724L3.94271 18.828C3.19283 18.0779 2.77157 17.0606 2.77157 16C2.77157 14.9393 3.19283 13.9221 3.94271 13.172L14.8387 2.27597Z"
+                fill="#C2C8CD"
+              />
+            </svg>
+          </div>
+          <div class="swiper reviewsCatousel">
+            <div class="swiper-wrapper reviewsCatousel__wrapper">
+              <div class="swiper-slide reviewItem">
+                <div class="reviewItem__header">
+                  <div class="reviewItem__avatar">
+                    <img
+                      src="./assets/avatars/emptyAvatar.webp"
+                      alt="Константинов Михаил Павлович"
+                    />
+                  </div>
+                  <div class="reviewItem__profileInfo">
+                    <h6 class="reviewItem__provileName">
+                      Константинов Михаил Павлович
+                    </h6>
+                    <p class="reviewItem__profileCity">Санкт-Петербург</p>
+                  </div>
+                </div>
+                <p class="reviewItem__content">
+                  Каждый из нас понимает очевидную вещь: перспективное
+                  планирование предоставляет широкие возможности для анализа
+                  существующих паттернов поведения. В своём стремлении улучшить
+                  пользовательский опыт мы
+                </p>
+              </div>
+              <div class="swiper-slide reviewItem">
+                <div class="reviewItem__header">
+                  <div class="reviewItem__avatar">
+                    <img
+                      src="./assets/avatars/IvanIvanov.webp"
+                      alt="Иван Иванов"
+                    />
+                  </div>
+                  <div class="reviewItem__profileInfo">
+                    <h6 class="reviewItem__provileName">Иван Иванов</h6>
+                    <p class="reviewItem__profileCity">Санкт-Петербург</p>
+                  </div>
+                </div>
+                <p class="reviewItem__content">
+                  Каждый из нас понимает очевидную вещь: перспективное
+                  планирование предоставляет широкие возможности для анализа
+                  существующих паттернов поведения. В своём стремлении улучшить
+                  пользовательский опыт мы упускаем, что активно развивающиеся
+                  страны третьего мира призваны к ответу.
+                </p>
+              </div>
+              <div class="swiper-slide reviewItem">
+                <div class="reviewItem__header">
+                  <div class="reviewItem__avatar">
+                    <img
+                      src="./assets/avatars/ArtemKornilov.webp"
+                      alt="Артем Корнилов"
+                    />
+                  </div>
+                  <div class="reviewItem__profileInfo">
+                    <h6 class="reviewItem__provileName">Артем Корнилов</h6>
+                    <p class="reviewItem__profileCity">Самара</p>
+                  </div>
+                </div>
+                <p class="reviewItem__content">
+                  Каждый из нас понимает очевидную вещь: перспективное
+                  планирование предоставляет широкие возможности для анализа
+                  существующих паттернов поведения.
+                </p>
+              </div>
+              <div class="swiper-slide reviewItem">
+                <div class="reviewItem__header">
+                  <div class="reviewItem__avatar">
+                    <img
+                      src="./assets/avatars/emptyAvatar.webp"
+                      alt="Константинов Михаил Павлович"
+                    />
+                  </div>
+                  <div class="reviewItem__profileInfo">
+                    <h6 class="reviewItem__provileName">
+                      Константинов Михаил Павлович
+                    </h6>
+                    <p class="reviewItem__profileCity">Санкт-Петербург</p>
+                  </div>
+                </div>
+                <p class="reviewItem__content">
+                  Каждый из нас понимает очевидную вещь: перспективное
+                  планирование предоставляет широкие возможности для анализа
+                  существующих паттернов поведения. В своём стремлении улучшить
+                  пользовательский опыт мы
+                </p>
+              </div>
+              <div class="swiper-slide reviewItem">
+                <div class="reviewItem__header">
+                  <div class="reviewItem__avatar">
+                    <img
+                      src="./assets/avatars/IvanIvanov.webp"
+                      alt="Иван Иванов"
+                    />
+                  </div>
+                  <div class="reviewItem__profileInfo">
+                    <h6 class="reviewItem__provileName">Иван Иванов</h6>
+                    <p class="reviewItem__profileCity">Санкт-Петербург</p>
+                  </div>
+                </div>
+                <p class="reviewItem__content">
+                  Каждый из нас понимает очевидную вещь: перспективное
+                  планирование предоставляет широкие возможности для анализа
+                  существующих паттернов поведения. В своём стремлении улучшить
+                  пользовательский опыт мы упускаем, что активно развивающиеся
+                  страны третьего мира призваны к ответу.
+                </p>
+              </div>
+              <div class="swiper-slide reviewItem">
+                <div class="reviewItem__header">
+                  <div class="reviewItem__avatar">
+                    <img
+                      src="./assets/avatars/ArtemKornilov.webp"
+                      alt="Артем Корнилов"
+                    />
+                  </div>
+                  <div class="reviewItem__profileInfo">
+                    <h6 class="reviewItem__provileName">Артем Корнилов</h6>
+                    <p class="reviewItem__profileCity">Самара</p>
+                  </div>
+                </div>
+                <p class="reviewItem__content">
+                  Каждый из нас понимает очевидную вещь: перспективное
+                  планирование предоставляет широкие возможности для анализа
+                  существующих паттернов поведения.
+                </p>
+              </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+          </div>
+          <div class="handler-next handler">
+            <svg
+              width="17"
+              height="32"
+              viewBox="0 0 17 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1.39143 29.724C1.26408 29.847 1.1625 29.9941 1.09262 30.1568C1.02275 30.3194 0.985964 30.4944 0.984425 30.6714C0.982887 30.8485 1.01662 31.024 1.08366 31.1879C1.1507 31.3518 1.24971 31.5006 1.3749 31.6258C1.50009 31.751 1.64896 31.85 1.81282 31.9171C1.97668 31.9841 2.15226 32.0178 2.32929 32.0163C2.50633 32.0148 2.68129 31.978 2.84397 31.9081C3.00664 31.8382 3.15376 31.7367 3.27676 31.6093L14.1728 20.7133C15.4209 19.4623 16.1219 17.7672 16.1219 16C16.1219 14.2328 15.4209 12.5377 14.1728 11.2866L3.27676 0.39064C3.02529 0.147762 2.68849 0.0133699 2.33889 0.0164078C1.9893 0.0194457 1.65488 0.159671 1.40767 0.406882C1.16046 0.654093 1.02023 0.988509 1.01719 1.33811C1.01416 1.6877 1.14855 2.0245 1.39143 2.27597L12.2874 13.172C13.0373 13.9221 13.4586 14.9393 13.4586 16C13.4586 17.0606 13.0373 18.0779 12.2874 18.828L1.39143 29.724Z"
+                fill="#C2C8CD"
+              />
+            </svg>
+          </div>
+        </div>
+      </section>
+      <section class="section questions" id="questions">
+        <h2 class="section__title questions__title">Вопросы и ответы</h2>
+        <ul class="accordion">
+          <li class="accordion__item">
+            <div class="accordion__header">
+              <h6 class="accordion__title">
+                Подтверждено: сознание наших соотечественников не замутнено
+                пропагандой?
+              </h6>
+              <div class="accordion__icon"></div>
+            </div>
+            <p class="accordion__content">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+              atque iure quia, nisi possimus debitis nihil repellat id dolor
+              recusandae aspernatur maxime ut dolorum, dicta minus eos laborum
+              doloribus accusamus.
+            </p>
+          </li>
+          <li class="accordion__item">
+            <div class="accordion__header">
+              <h6 class="accordion__title">
+                Прототип нового сервиса - это как трубный призыв?
+              </h6>
+              <div class="accordion__icon"></div>
+            </div>
+            <p class="accordion__content">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+              atque iure quia, nisi possimus debitis nihil repellat id dolor
+              recusandae aspernatur maxime ut dolorum, dicta minus eos laborum
+              doloribus accusamus.
+            </p>
+          </li>
+          <li class="accordion__item">
+            <div class="accordion__header">
+              <h6 class="accordion__title">
+                Частокол на границе продолжает удивлять?
+              </h6>
+              <div class="accordion__icon"></div>
+            </div>
+            <p class="accordion__content">
+              В частности, дальнейшее развитие различных форм деятельности
+              позволяет выполнить важные задания по разработке дальнейших
+              направлений развития. Предварительные выводы неутешительны:
+              экономическая повестка сегодняшнего дня говорит о возможностях
+              существующих финансовых и административных условий.
+            </p>
+          </li>
+          <li class="accordion__item">
+            <div class="accordion__header">
+              <h6 class="accordion__title">
+                Очевидцы сообщают, что слышали грохот грома градущих изменений?
+              </h6>
+              <div class="accordion__icon"></div>
+            </div>
+            <p class="accordion__content">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+              atque iure quia, nisi possimus debitis nihil repellat id dolor
+              recusandae aspernatur maxime ut dolorum, dicta minus eos laborum
+              doloribus accusamus.
+            </p>
+          </li>
+          <li class="accordion__item">
+            <div class="accordion__header">
+              <h6 class="accordion__title">
+                И по сей день в центральных регионах звучит перекатами печальный
+                плач оппозиции?
+              </h6>
+              <div class="accordion__icon"></div>
+            </div>
+            <p class="accordion__content">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+              atque iure quia, nisi possimus debitis nihil repellat id dolor
+              recusandae aspernatur maxime ut dolorum, dicta minus eos laborum
+              doloribus accusamus.
+            </p>
+          </li>
+          <li class="accordion__item">
+            <div class="accordion__header">
+              <h6 class="accordion__title">
+                Нынче никто не может себе позволить инициировать треск
+                разлетающихся скреп?
+              </h6>
+              <div class="accordion__icon"></div>
+            </div>
+            <p class="accordion__content">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+              atque iure quia, nisi possimus debitis nihil repellat id dolor
+              recusandae aspernatur maxime ut dolorum, dicta minus eos laborum
+              doloribus accusamus.
+            </p>
+          </li>
+          <li class="accordion__item">
+            <div class="accordion__header">
+              <h6 class="accordion__title">
+                Высококачественный прототип будущего проекта обнадёживает?
+              </h6>
+              <div class="accordion__icon"></div>
+            </div>
+            <p class="accordion__content">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+              atque iure quia, nisi possimus debitis nihil repellat id dolor
+              recusandae aspernatur maxime ut dolorum, dicta minus eos laborum
+              doloribus accusamus.
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section class="section statistics">
+        <div class="statistics__block">
+          <h6 class="statistics__title">
+            Опрошенных пользовались микрокредитами
+          </h6>
+          <p class="statistics__paragraph">
+            Не могли покрыть внезапные траты свыше 7000 ₽. Доступ к заработанным
+            деньгам помогает отказаться от кредитов и экономить деньги на
+            процентах и штрафах Не могли покрыть внезапные траты свыше 7000 ₽.
+            Доступ к заработанным деньгам помогает отказаться от кредитов и
+            экономить деньги на процентах и штрафах
+          </p>
+        </div>
+        <div class="statistics__block">
+          <h6 class="statistics__title">
+            Опрошенных пользовались микрокредитами
+          </h6>
+          <p class="statistics__paragraph">
+            Не могли покрыть внезапные траты свыше 7000 ₽. Доступ к заработанным
+            деньгам помогает отказаться от кредитов и экономить деньги на
+            процентах и штрафах Не могли покрыть внезапные траты свыше 7000 ₽.
+            Доступ к заработанным деньгам помогает отказаться от кредитов и
+            экономить деньги на процентах и штрафахНе могли покрыть внезапные
+            траты свыше 7000 ₽. Доступ к заработанным деньгам помогает
+            отказаться от кредитов и экономить деньги на процентах и штрафах
+          </p>
+        </div>
+        <div class="statistics__block">
+          <h6 class="statistics__title">
+            Опрошенных пользовались микрокредитами
+          </h6>
+          <p class="statistics__paragraph">
+            Не могли покрыть внезапные траты свыше 7000 ₽. Доступ к заработанным
+            деньгам помогает отказаться от кредитов и экономить деньги на
+            процентах и штрафах Не могли покрыть внезапные траты свыше 7000 ₽.
+            Доступ к заработанным деньгам помогает отказаться от кредитов и
+            экономить деньги на процентах и штрафахНе могли покрыть внезапные
+            траты свыше 7000 ₽. Доступ к заработанным деньгам помогает
+            отказаться от кредитов и экономить деньги на процентах и штрафах
+          </p>
+        </div>
+        <div class="statistics__block">
+          <h6 class="statistics__title">
+            Опрошенных пользовались микрокредитами
+          </h6>
+          <p class="statistics__paragraph">
+            Не могли покрыть внезапные траты свыше 7000 ₽. Доступ к заработанным
+            деньгам помогает отказаться от кредитов и экономить деньги на
+            процентах и штрафах Не могли покрыть внезапные траты свыше 7000 ₽.
+            Доступ к заработанным деньгам помогает отказаться от кредитов и
+            экономить деньги на процентах и штрафах
+          </p>
+        </div>
+      </section>
+      <section class="section formSection" id="form">
+        <h2 class="section__title">Отправь форму</h2>
+        <form action="submit" class="form">
+          <div class="inputBox form__name">
+            <input
+              class="inputBox__input inputField"
+              type="text"
+              name="name"
+              required=""
+            />
+            <label class="inputBox__label" id="name">Имя</label>
+            <div class="inputBox__icon ok">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_24_50)">
+                  <path
+                    d="M10 0C4.48 0 0 4.48 0 10C0 15.52 4.48 20 10 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 10 0ZM8 15L3 10L4.41 8.59L8 12.17L15.59 4.58L17 6L8 15Z"
+                    fill="#25CD82"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_24_50">
+                    <rect width="20" height="20" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+            <div class="inputBox__icon wrong">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10 0C4.47 0 0 4.47 0 10C0 15.53 4.47 20 10 20C15.53 20 20 15.53 20 10C20 4.47 15.53 0 10 0ZM15 13.59L13.59 15L10 11.41L6.41 15L5 13.59L8.59 10L5 6.41L6.41 5L10 8.59L13.59 5L15 6.41L11.41 10L15 13.59Z"
+                  fill="#F13636"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="inputBox form__tel">
+            <input
+              class="inputBox__input inputField"
+              type="tel"
+              name="tel"
+              required=""
+            />
+            <label class="inputBox__label" id="tel">Телефон</label>
+            <div class="inputBox__icon ok">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_24_50)">
+                  <path
+                    d="M10 0C4.48 0 0 4.48 0 10C0 15.52 4.48 20 10 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 10 0ZM8 15L3 10L4.41 8.59L8 12.17L15.59 4.58L17 6L8 15Z"
+                    fill="#25CD82"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_24_50">
+                    <rect width="20" height="20" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+            <div class="inputBox__icon wrong">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10 0C4.47 0 0 4.47 0 10C0 15.53 4.47 20 10 20C15.53 20 20 15.53 20 10C20 4.47 15.53 0 10 0ZM15 13.59L13.59 15L10 11.41L6.41 15L5 13.59L8.59 10L5 6.41L6.41 5L10 8.59L13.59 5L15 6.41L11.41 10L15 13.59Z"
+                  fill="#F13636"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="form__checkbox">
+            <input
+              type="checkbox"
+              id="agreement"
+              class="agreementInput"
+              name="agree"
+            />
+            <label for="agreement" class="agreementLadel">
+              Согласен, отказываюсь
+            </label>
+          </div>
+          <button type="submit" class="button blue form__button" disabled>
+            Отравить
+          </button>
+        </form>
+      </section>
+      <footer class="footer">
+        <p class="footer__paragraph">© 2021 Лаборатория интернет</p>
+      </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- <script src="./js/swiper.js"></script> -->
+    <script src="./js/burger.js"></script>
+    <script src="./js/carousel.js"></script>
+    <script src="./js/accardion.js"></script>
+    <script src="./js/form.js"></script>
+  </body>
+</html>

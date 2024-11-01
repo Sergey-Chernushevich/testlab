@@ -1,0 +1,84 @@
+:root {
+  --primary: #2a6cea;
+  --black: #191c1f;
+  --dark-gray: #5e646a;
+  --gray: #83898f;
+  --mid-grey: #c2c8cd;
+  --light-gray: #eceff2;
+  --extralight-gray: #f6f8fa;
+  --white: #fff;
+  --dangerous: #f13636;
+  --green-success: #25cd82;
+  --primary-hover: #397dff;
+  --primary-disabled: #abcae6;
+  --font-family: "Graphik LCG", sans-serif;
+  --regular: 400;
+  --semi-bold: 600;
+  --pading-1920: 18%;
+  --pading-1200: 2%;
+  --pading-768: 2%;
+  --pading-375: 4%;
+  --pading-320: 5%;
+  --transition-time: 0.3s;
+}
+
+@mixin body-12 {
+  font-size: 12px;
+  line-height: 133%;
+}
+
+@mixin body-14 {
+  font-size: 14px;
+  line-height: 171%;
+}
+
+@mixin body-16 {
+  font-size: 16px;
+  line-height: 175%;
+}
+
+@mixin body-18 {
+  font-size: 18px;
+  line-height: 178%;
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin headline-1 {
+  font-weight: var(--semi-bold);
+  font-size: 52px;
+  line-height: 123%;
+}
+
+@mixin headline-2 {
+  font-weight: var(--semi-bold);
+  font-size: 40px;
+  line-height: 140%;
+}
+
+@mixin headline-3 {
+  font-weight: var(--semi-bold);
+  font-size: 32px;
+  line-height: 125%;
+}
+
+@mixin headline-4 {
+  font-weight: var(--semi-bold);
+  font-size: 24px;
+  line-height: 133%;
+}
+@mixin headline-5 {
+  font-weight: var(--semi-bold);
+  font-size: 20px;
+  line-height: 120%;
+}
+
+@mixin headline-6 {
+  font-weight: var(--semi-bold);
+  font-size: 16px;
+  line-height: 150%;
+}
