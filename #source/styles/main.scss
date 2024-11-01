@@ -6,6 +6,7 @@
   font-family: var(--font-family);
   font-weight: var(--regular);
   color: var(--black);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 html {
   scroll-behavior: smooth;
