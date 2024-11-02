@@ -612,7 +612,7 @@ html {
     gap: 20px;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    align-items: center;
+    align-items: start;
     grid-template-areas:
       "name "
       "tel"
@@ -627,6 +627,10 @@ html {
   }
   &__checkbox {
     grid-area: checkbox;
+
+    @media (max-width: 767px) {
+      margin-top: 22px;
+    }
   }
   &__button {
     grid-area: button;
